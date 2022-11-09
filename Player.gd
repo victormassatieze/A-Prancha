@@ -44,4 +44,6 @@ func _on_Button_pressed():
 
 func _on_Reset_pressed():
 	position.y = 297
+	$AnimatedSprite.stop()
+	$AnimatedSprite.frame = 0
 	press_count = 0
