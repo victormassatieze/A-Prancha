@@ -2,8 +2,9 @@ extends Area2D
 
 export var speed = 40
 var screen_size
-var press_count = 0;
+var press_count = 0
 var target_position
+var count = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -19,11 +20,18 @@ func _process(delta):
 	if press_count > 0:
 		if position.y > target_position:
 			position.y -= speed * delta
-			$AnimatedSprite.animation = "walk"
+			count = 0
+		elif count < 60:
+			$AnimatedSprite.play("walk")
+			count += 1
+		else:
+			$AnimatedSprite.stop()
+			$AnimatedSprite.frame = 0
+			count += 1
 	if press_count == 6:
 		if position.y > target_position:
 			position.y -= speed * delta
-			$AnimatedSprite.animation = "walk"
+			$AnimatedSprite.play("walk")
 		else:
 			rotation_degrees += 400 * delta
 			scale -= 5 * scale * delta
