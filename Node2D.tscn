@@ -14,7 +14,7 @@ texture = ExtResource( 2 )
 
 [node name="Player1" parent="." instance=ExtResource( 1 )]
 position = Vector2( 193, 297 )
-scale = Vector2( 0.7, 0.7 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Button1" type="Button" parent="."]
 margin_left = 173.0
@@ -24,7 +24,7 @@ margin_bottom = 374.0
 
 [node name="Player2" parent="." instance=ExtResource( 1 )]
 position = Vector2( 344, 297 )
-scale = Vector2( 0.7, 0.7 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Button2" type="Button" parent="."]
 margin_left = 324.0
@@ -34,7 +34,7 @@ margin_bottom = 372.0
 
 [node name="Player3" parent="." instance=ExtResource( 1 )]
 position = Vector2( 496, 297 )
-scale = Vector2( 0.7, 0.7 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Button3" type="Button" parent="."]
 margin_left = 478.0
@@ -44,7 +44,7 @@ margin_bottom = 374.0
 
 [node name="Player4" parent="." instance=ExtResource( 1 )]
 position = Vector2( 648, 297 )
-scale = Vector2( 0.7, 0.7 )
+scale = Vector2( 0.5, 0.5 )
 
 [node name="Button4" type="Button" parent="."]
 margin_left = 630.0
